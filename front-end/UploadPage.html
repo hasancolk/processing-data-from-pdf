@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comptible" content="IE-edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Upload.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="userScreen.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="userProjects.html" onclick="getProjects(event);">Projeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="UploadPage.html">PDF Yükle</a>
+                    </li>
+                    <li class="nav-item left">
+                        <a class="nav-link" href="loginScreen.html">Çıkış Yap</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <div class="file-upload">
+            <input id="pdf-file" class="form-control" type="file" accept="application/pdf" required />
+            <div class="mt-4 text-center">
+                <button type="button" class="btn btn-success btn-block " onclick="uploadFile();">
+                    <span class="image-title">Yükle</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="upload.js"></script>
+
+</body>
+
+</html>

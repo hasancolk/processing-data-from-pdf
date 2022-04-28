@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Main Page </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="adminScreen.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projeler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="users.html">Kullanıcılar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="query2.html">Sorgu 2</a>
+                        </li>
+                        <li class="nav-item left">
+                            <a class="nav-link" href="loginScreen.html">Çıkış Yap</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <br>
+            
+            <input type="search" id="one" placeholder="Kullanıcı Adı">
+            <input type="search" id="two" placeholder="Şifre">
+            
+            <button onclick="add()">Ekle</button>
+            <button onclick="update()">Güncelle</button>
+            
+            <table class="table table-bordered">
+            <thead>
+            <th>Kullanıcı Adı</th>
+            <th>Şifre</th>
+            </thead>
+            <tbody id="data">
+            </tbody>
+            
+            </table>
+            <br><br><br>
+            
+            
+        </div>
+
+    
+
+<script src="script.js"></script>
+</body>
+
+</html>
